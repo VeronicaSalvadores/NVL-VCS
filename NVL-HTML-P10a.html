@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Encuesta de satisfaccion</title>
+ </head>
+ <body>
+
+<h1> Encuesta de satisfaccion </h1>
+
+<form method="post" action="miservidor.php">
+
+    <div>
+      <label for="CP">Codigo postal:</label>
+      <input id="cp" type="number">
+    </div>
+
+    <div>
+      <label for="satisfaccion">Nivel de satisfaccion:</label>
+      <select id="satisfaccion">
+        <option value="M">Malo</option>
+        <option value="R">Regular</option>
+        <option value="B">Bueno</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="email">E-mail:</label>
+      <input id="email" type=”text”>
+   </div>
+   
+   <div>
+    <label for="positivo">Puntos positivos:</label>
+    <p><textarea id="positivo"></textarea></p>
+   </div>
+
+   <div>
+    <label for="negativo">Puntos negativos:</label>
+    <p><textarea id="negativo"></textarea></p>
+   </div>
+
+    <div>
+      <label for="servicio">¿Que opinion tiene del servicio?:</label>
+      <select id="servicio">
+        <option value="P">Pesimo</option>
+        <option value="R">Regular</option>
+        <option value="B">Bueno</option>
+        <option value="E">Excelente</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="servicio">¿Que opinion tiene del servicio?:</label>
+      <p><input name="servicio" type="radio" value="P">Pesimo</p>
+      <p><input name="servicio" type="radio" value="R">Regular</p>
+      <p><input name="servicio" type="radio" value="B">Bueno</p>
+      <p><input name="servicio" type="radio" value="E">Excelente</p>
+    </div>
+
+  <p><input type="submit" value="Enviar"></p> 
+</form>
+
+ </body>
+
+</html>
